@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/form/; botRegexSlut = /^\/slut/;
+      botRegex = /^\/form/; botRegexCalendar = /^\/calendar/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -16,9 +16,9 @@ function respond() {
     postMessage("https://docs.google.com/forms/d/e/1FAIpQLSfISy5hg61KoVdpa1jLeqvmP7g5ccO1BpYZIJbxxnr-3sivpA/viewform");
     this.res.end();
   }
-  else if(request.text && botRegexSlut.test(request.text)) {
+  else if(request.text && botRegexCalendar.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/640x364.jpeg.f8a0e216bf7e42ed9a86b3ae23cc2ff1.large");
+    postMessage("https://calendar.google.com/calendar/render?cid=YnVzLm1pYW1pLmVkdV8xcW9jaGk3c2hhZGVkMjludTg3anRob3N0MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&pli=1#main_7");
     this.res.end();
   }  
   else if(request.text && botRegexSiege.test(request.text)) {
