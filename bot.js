@@ -14,7 +14,7 @@ function respond() {
                 "MIA","BUF","SF","WAS","NYJ","TB"]
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/forms/d/e/1FAIpQLSfISy5hg61KoVdpa1jLeqvmP7g5ccO1BpYZIJbxxnr-3sivpA/viewform");
+    postMessage("https://tinyurl.com/AmirsOCD");
     this.res.end();
   }
   else if(request.text && botCal.test(request.text)) {
