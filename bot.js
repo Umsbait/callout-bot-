@@ -18,7 +18,7 @@ function respond() {
   }
   else if(request.text && botRegexCalendar.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://calendar.google.com/calendar/render?cid=YnVzLm1pYW1pLmVkdV8xcW9jaGk3c2hhZGVkMjludTg3anRob3N0MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&pli=1#main_7");
+    postMessage("https://tinyurl.com/CallOutC");
     this.res.end();
   }  
   else if(request.text && botRegexSiege.test(request.text)) {
